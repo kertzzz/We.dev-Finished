@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial';
+}
+
+body {
+    background-size: 2000%;
+    background-color: #e1e0e0;
+    color: #fff;
+    position: sticky;
+    min-height: 100vh;
+    max-height: 500vh;
+}
+
+/** --------------------------------------------------------------------------------------**/
+
+/*Navbar styles*/
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181920;
+    padding: 1rem 3.5rem;
+    z-index: 1000;
+    overflow: hidden;
+    
+}
+
+.navbar ul,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar .logo img {
+    width: 90px;
+    height: auto;
+    margin-left: 30px;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar-links ul {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-right: 70px;
+    transition: color 0.4s ease;
+    opacity: 0;
+    animation: slideTop .8s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar-links a:hover,
+.navbar a .tab-active {
+    color: #C9BC31;
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/** --------------------------------------------------------------------------------------**/
+
+/*Page styles*/
+.section {
+    height: 100vh;
+    padding: 8.5% 8%;
+}
+
+/** --------------------------------------------------------------------------------------**/
+
+/*Home Page*/
+.Home-page {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.home-container {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.home-leftcontainer {
+    width: 50%;
+    height: 100%;
+    display: grid;
+}
+
+.home-rightcontainer {
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.home-rightcontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.welcome-text {
+    margin-top: 20em;
+    margin-left: 5em;
+    height: 5vh;
+}
+
+.welcome-text h2 {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    width: 70%;
+    font-size: 58px;
+    padding-bottom: 1px;
+    margin: 25px 0 ;
+    color: #030728;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid #65635f;
+    animation: typing 2.8s steps(22) forwards, blink 1s step-end infinite, slideLeft .8s ease forwards;
+}
+
+.home-leftcontainer h3 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 35px;
+    margin-right: 80px;
+    margin-left: 60px;
+    text-indent: 1.5em;
+    text-align: justify;
+    color: rgb(84, 82, 82);
+    animation: slideTop 1s ease forwards;
+    animation-delay: .2s;
+}
+
+.navbtn {
+    display: inline; 
+    justify-content: space-evenly;
+    align-items: center;   
+    padding: 20px;
+    margin-bottom: 10em; 
+}
+
+.navbtn a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    animation: slideTop 5s ease forwards;
+}
+
+
+.ContactPage_button {
+    background: rgb(84, 82, 82);
+    margin-left: 10em;
+    padding: 15px 60px 15px 60px;
+    border-radius: 40px;
+}
+
+.ContactPage_button:hover {
+    background-color: #3E3B39;
+    transition: .2s ease-in-out;
+}
+
+.AboutPage_button {
+    margin-left: 2em;
+    background: #C9BC31;
+    padding: 15px 60px 15px 60px;
+    border-radius: 40px;
+}
+
+.AboutPage_button:hover {
+    background-color: #b6ab2f;
+    transition: .2s ease-in-out;
+}
+
+/** --------------------------------------------------------------------------------------**/
+
+/**Review Details Page**/
+.Reviews-page {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.Reviews-div {
+    display: flex;
+    height: 100%;
+}
+
+.left-rdiv {
+    background-color: #2b2c37;
+    height: 100vh;
+    width: 50%;
+}
+
+.left-rdiv h3 {
+    font-family: "Poppins" , serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 50px;
+    color: #C9BC31;
+}
+
+.left-rdiv .circle-icon {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 90px;
+    margin-top: 20px;
+    margin-left: 70px; 
+    height: 15%; 
+    width: 15%;
+    position: relative;
+    bottom: 30px;
+}
+
+.left-rdiv .fd {
+    font-size: 16px;
+    display: flex;
+}
+
+.fd h2 {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.fd-text p {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 3vh;
+    float: right;
+}
+
+.right-rdiv {
+    background-color: #fff;
+    height: 100vh;
+    width: 50%;
+}
+
+.right-rdiv h3 {
+    font-size: 54px;
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+    padding-top: 5vh;
+    padding-bottom: 10px;
+    color: #000;
+}
+
+.reviewContainer {
+    width: auto;
+    height: 80vh;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.reviewContainer .imgContainer {
+    width: 80%;
+    height: 23%;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.imgContainer img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.credits {
+    color: #000;
+}
+
+.footerContainer-homepage {
+    display: none;  
+    background-color: #C9BC31;
+    height: 23vh;
+    color: #fff;
+    font-size: 22px;
+    padding: 3vh;
+}
+
+.footerContainer-homepage i {
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+}
+
+.footerContainer-homepage .address {
+    position: relative;
+    bottom: 1vh;
+    left: 5vh;
+    height: 5vh;
+    width: 26%;
+}
+
+.footerContainer-homepage .address p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer-homepage .num {
+    position: relative;
+    top: 8vh;
+    right: 45vh;
+    height: 5vh;
+    width: 13%;
+}
+
+.footerContainer-homepage .num p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer-homepage .email {
+    position: relative;
+    top: -1vh;
+    height: 5vh;
+    width: 13%;
+}
+
+.footerContainer-homepage .email p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer-homepage .page {
+    position: relative;
+    top: 8vh;
+    right: 25vh;
+    height: 5vh;
+    width: 13%;
+}
+
+.footerContainer-homepage .page p {
+    position: relative;
+    left: 5vh;
+}
+
+.footerContainer-homepage .cdt {
+    position: relative;
+    top: 4.5vh;
+    right: -15vh;
+    height: 5vh;
+}
+
+/** --------------------------------------------------------------------------------------**/
+
+/*About Page*/
+.About-page {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #e1e0e0;
+}
+
+.About-div {
+    height: 100%;
+    width: 100%;
+}
+
+.About-div h2 {
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 500;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    color: #050505;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Profile-Team {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.CEO-container,
+.Programmers-container,
+.Designers-container {
+    background-color: #c9bc318c;
+    width: 500px;
+    height: 580px;
+    display: grid;
+    box-shadow: 0 8px px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+}
+
+.CEO-container img,
+.Programmers-container img,
+.Designers-container img {
+    margin: auto;
+    width: 180px;
+    height: auto;
+    color: #b4adad;
+    padding: 10px;
+}
+
+.Profile-Team p {
+    font-size: 34px;
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+    
+}
+
+.Designers-container img {
+    height: auto;
+    width: 150px;
+}
+
+
+/** --------------------------------------------------------------------------------------**/
+
+/*Service Page*/
+.Service-page {
+    background-color: #c9c9c9;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Service-div {
+    height: 100%;
+    width: 100%;
+}
+
+.Service-page h2 {
+    margin-bottom: 5%;
+    display: flex;
+    font-size: 60px;
+    padding-top: 13vh;
+    padding-bottom: 20px;
+    font-weight: 600;
+    color: #000000;
+    justify-content: center;
+}
+
+.language-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.WebDev-container,
+.Java-container,
+.AndroidApp-container {
+    background-color: #3E3B39;
+    width: 500px;
+    height: 580px;
+    display: grid;
+    box-shadow: 0 8px px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+}
+
+.Java-container img,
+.WebDev-container img,
+.AndroidApp-container img {
+    color: #b4adad;
+    width: 180px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+.language-container a {
+    text-align: center;
+}
+
+.language-container h5 {
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.language-container .See_more {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s ease;
+    color: #C9BC31;
+}
+
+.language-container .See_more:hover {
+    color: #fff;
+}
+
+.AndroidApp-container img {
+    height: auto;
+    width: 135px;
+}
+
+.WebDev-container img {
+    height: auto;
+    width: 195px;
+}
+
+
+
+/** --------------------------------------------------------------------------------------**/
+
+
+/*Contact Page*/
+.Contact-page {
+    display: grid;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.Contact-div {
+    height: 100%;
+    width: 100%;
+}
+
+.contact-container {
+    margin-top: 80px;
+    display: flex;
+    width: 140vh;
+    height: 360px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    animation: swingTop .8s linear forwards;
+}
+
+.left-container {
+    background-color: #999898;
+    width: 45%;
+    height: 85vh;
+    display: flex;
+}
+
+.text-details {
+    margin: auto;
+    font-family: monospace;
+    font-size: 18px;
+    padding: 5px;
+    width: 100%;
+}
+
+.text-details b {
+    color: #C9BC31;
+}
+
+.text-details p {
+    color: #fff;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+
+.right-container {
+    background-color: #181920;
+    width: 55%;
+    height: 85vh;
+    z-index: 10;
+}
+
+.right-container h3 {
+    font-size: 40px;
+    text-align: center;
+    padding: 50px;
+    color: #C9BC31;
+}
+
+.right-container .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 70px;
+    color: #fff;
+}
+
+.right-container .input-box input,
+.right-container .input-box textarea {
+    padding: 5px 0;
+    font-size: 20px;
+    width: 80%;
+    margin: 10px 0 0 50px;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    outline: none;
+    background: #181920;
+    resize: none;
+    color: #fff;
+}
+
+.right-container .input-box span {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #a3a3a3;
+}
+
+.right-container .input-box input:focus~span,
+.right-container .input-box input:valid~span,
+.right-container .input-box textarea:focus~span,
+.right-container .input-box textarea:valid~span {
+    color: rgb(240, 196, 54);
+    font-size: 14px;
+    transform: translateY(-30px);
+}
+
+.right-container .input-box input[type="submit"] {
+    width: 80%;
+    background: #C9BC31;
+    color: #030728;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: .2s ease;
+}
+
+.right-container .input-box input[type="submit"]:hover {
+    background: #5a5844;
+    color: #fff;
+}
+
+.Confirm-message {
+    display: none;
+    color: rgb(244, 246, 244);
+    font-size: 18px;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.credits {
+    color: #000;   
+    padding-top: 5px;
+}

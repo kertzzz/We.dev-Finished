@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial';
+}
+
+body {
+    background-size: 2000%;
+    position: sticky;
+    background-color: #e1e0e0;
+    color: #fff;
+    min-height: 100vh;
+    max-height: 500vh;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.mainContainer {
+    background-color: hsl(0, 2%, 24%);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
+    width: 100%;
+    height: 2150px;
+}
+
+.topContainer {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    height: 350px;
+    width: 100%;
+    justify-content: center;
+}
+
+.topContainer h1 {
+    padding-top: 3vh;
+    font-size: 46px;
+    text-align: center;
+}
+
+.container-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-box img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 20px;
+    object-fit: cover;
+}
+
+.cont h6 {
+    font-size: 20px;
+    color: #C9BC31;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.topContainer h5 {
+    font-size: 30px;
+    margin-top: 12%;
+    justify-content: center;
+    position: absolute;
+}
+
+
+.detailsContainer p {
+    padding: 30px;
+    font-size: 24px;
+    text-indent: 5vh;
+    text-align: justify;
+    width: 100%;
+}
+
+.detailsContainer ol {
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: 28px;
+    line-height: 10vh;
+}
+
+.detailsContainer ul {
+    font-size: 22px;
+    padding-left: 50px;
+    line-height: 50px;
+}
+
+.bottomContainer ul{
+    padding-left: 100px;
+    padding-top: 3vh;
+    font-size: 28px;
+    line-height: 10vh;
+}
+
+.bottomContainer li {
+    line-height: 5vh;
+}
+
+.bottomContainer h2 {
+    font-size: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bottomContainer a {
+    color: #C9BC31;
+}
+
+.footerContainer {
+    display: flex;
+    background-color: #C9BC31;
+    height: 40%;
+    color: #fff;
+    font-size: 22px;
+    padding: .8em;
+}
+
+.footerContainer i {
+    font-size: 30px;
+    color: #000;
+}
+
+.foot_details {
+    display: flex;
+    width: 75%;
+    height: 100%;
+}
+
+.foot_details .top-footer{
+    padding: 5px;
+    width: 50%;
+}
+
+.foot_details .bottom-footer{
+    padding: 10px;
+    width: 50%
+}
+
+.top-footer .num,
+.address, 
+.bottom-footer .page,
+.email {
+    padding-top: 30px;
+    display: flex;
+}
+
+.footerContainer p {
+    padding-left: 20px;
+}
+
+.footerContainer .cdt {
+    height: 5vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.ft-homepage {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/*About Us*/
+.main-container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container h1 {
+    color: #000;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 13vh;
+    font-size: 50px;
+}
+
+.container {
+    position: relative;
+    top: 20vh;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 100%;
+    height: 60vh;
+    margin: 0 130px 55px;
+}
+
+.card-list .card-item {
+    color: #000;
+    background-color: #776f6f4b;
+    user-select: none;
+    padding: 35px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.card-list .card-item .card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    padding: 4px;
+    object-fit: cover;
+}
+
+.card-list .card-item .name {
+    font-size: 24px;
+    color: #000000;
+    line-height: 5px;
+}
+
+.card-list .card-item .profile-role {
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    float: right;
+    color: #948b25;
+    top: 15px;
+    text-align: center;
+}
+
+.card-list .card-item .more-details {
+    font-size: 22px;
+    margin-top: 4vh;
+    padding: 30px 35px;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.card-list .card-item .more-details:hover {
+    color: #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+    background-color: #3f3d3d;
+    height: 13px;
+    width: 13px;
+}
+
+.slider-wrapper .slide-button {
+    color: #333333;
+    margin: -30px 70px 35px;
+    transition: .2s ease;
+}
+
+.slider-wrapper .slide-button:hover {
+    color: #fff;
+}
+
+.floatbox {
+    display: none;
+    position: absolute;
+    margin-left:30%;
+    margin-top: -30%; 
+    z-index: 1000;
+    width: 40%;
+    height: 85%;
+    background: #020202a8;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    animation: active .2s ease-in-out forwards;
+}
+
+.floatbox img {
+    margin-left: 10%;
+    margin-top:5%; 
+    border-radius: 50%;
+    height: 230px;
+    width: 200px;
+    padding: 10px;
+    object-fit: cover;
+    float: left;
+}
+
+.floatbox.active {
+    display: block;
+}
+
+.detailsp {
+    display: flex;
+    flex-direction: column;
+    padding-top:100px;
+    padding-left: 20px;
+    width: 40%; 
+}
+
+.detailsp .profile-name {
+    width: 180%;
+    font-size: 36px;
+    color: #C9BC31;
+}
+
+.detailsp .profile-motto {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    text-align: justify;
+}
+
+.personal-details {
+    padding-left: 60px;
+    margin-top: 15%;
+    margin-left: -5%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+}
+
+.personal-details .ed-at,
+.Skills {
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.personal-details .colorf {
+    color: #C9BC31;
+}
+
+.personal-details ul {
+    font-size: 20px;
+    padding-left: 40px;
+    line-height: 5vh;
+    list-style: none;
+}
+
+.close-btn {
+    font-size: 38px;
+    position: relative;
+    float: right;
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: .2s ease;
+    color: #fff;
+}
+
+.close-btn:hover {
+    color: #fff;
+    background-color: #3f414149;
+}

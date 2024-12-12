@@ -1,0 +1,458 @@
+/*Laptop Screen-size*/
+@media screen and (max-width: 1280px) {
+    /*Home page*/
+    .welcome-text {
+        margin-top: 12em;
+        margin-left: 2em;
+        height: 5vh;
+    }
+    
+    .welcome-text h2 {
+        font-size: 40px;
+    }
+
+    .home-leftcontainer h3 {
+        margin-right: 80px;
+        margin-left: 60px;
+        margin-top: 50px;
+    }
+
+    .ContactPage_button {
+        margin-left: 1em;
+    }
+
+/** --------------------------------------------------------------------------------------**/
+    /*Reviews page*/
+    .left-rdiv h3 {
+        font-size: 40px;
+    }
+
+    .left-rdiv .circle-icon {
+        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-top: 5px;
+        margin-left: 30px; 
+    }
+
+    .fd h2 {
+        padding: 3px;
+        margin-bottom: 1px;
+        margin-top: -10px;
+    }
+
+    .right-rdiv h3 {
+        font-size: 40px;
+    }
+
+    .imgContainer {
+        margin-left: 20px;
+        object-fit: fill;
+    }
+
+/** --------------------------------------------------------------------------------------**/
+    /*About page*/
+    .About-div h2{
+        padding-bottom: 0;
+    }
+
+    .CEO-container,
+    .Programmers-container,
+    .Designers-container {
+        height: 380px;
+        width: 300px;
+        margin-top: -20px;
+    }
+
+    .CEO-container img,
+    .Programmers-container img,
+    .Designers-container img {
+        width: 130px;
+    }
+
+    .Profile-Team p {
+        padding-top: 50px;
+        font-size: 22px;
+    }
+
+/** --------------------------------------------------------------------------------------**/
+    /*Services page*/
+    .Service-page h2 {
+        margin-bottom: 1%;
+    }
+
+    .WebDev-container,
+    .Java-container,
+    .AndroidApp-container {
+    height: 380px;
+    width: 300px;
+    }
+
+    .Java-container img,
+    .WebDev-container img,
+    .AndroidApp-container img {
+        width: 130px;
+    }
+
+    .language-container h5 {
+        font-size: 26px;
+    }
+
+    .AndroidApp-container img {
+        height: auto;
+        width: 105px;
+    }
+    
+    .WebDev-container img {
+        height: auto;
+        width: 150px;
+    }
+    
+/** --------------------------------------------------------------------------------------**/
+    /*Contact page*/
+    .text-details p {
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .right-container h3 {
+        font-size: 36px;
+        padding: 30px;
+    }
+
+    .right-container .input-box {
+        margin-top: 30px;
+    }
+
+/** --------------------------------------------------------------------------------------**/
+    /*Floatbox about page*/
+    .floatbox img {
+        margin-left: 4%;
+        height: 200px;
+        width: 180px;
+    }
+
+    .detailsp {
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+
+    .detailsp .profile-name {
+        font-size: 28px;
+    }
+
+    .detailsp .profile-motto {
+        padding-left: 15px;
+        width: 120%;
+    }
+
+    .personal-details {
+        padding-left: 40px;
+        margin-top: 10%;
+    }
+
+    .personal-details .ed-at,
+    .Skills {
+        font-size: 20px;
+    }
+
+    .personal-details ul {
+        font-size: 18px;
+    }
+    
+    #profile-bacani .profile-name {
+        width: 130%;
+        font-size: 28px;
+    }
+
+    #profile-precious .profile-name {
+        width: 130%;
+        font-size: 26px;
+    }
+
+    #profile-precious .profile-motto {
+        width: 130%;
+        font-size: 18px;
+    }
+
+    #profile-precious .personal-details {
+        margin-top: 5%;
+    }
+
+    #profile-kerby .profile-motto {
+        width: 130%;
+        font-size: 18px;
+    }
+
+/** --------------------------------------------------------------------------------------**/
+    /*Details Services page*/
+    .mainContainer {
+        height: 1850px;
+    }
+
+    .topContainer {
+        height: 320px;
+    }
+
+    .topContainer h1 {
+        font-size: 40px;
+        padding-top: 5px;
+    }
+
+    .topContainer h5 {
+        margin-top: 17%;
+    }
+
+    .footerContainer {
+        height: 30%;
+        padding: .5em;
+        font-size: 18px;
+    }
+
+
+}
+
+/*Mobile Screen-size*/
+@media screen and (max-width: 620px) {
+    /*Home page*/
+    .navbar-links.active,
+    .navbar-links {
+        display: block;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: 65px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #181920;
+        width: 45%;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+        padding-left: 10vh;
+    }
+
+    .nav-menu.active {
+        left: 300px;
+    }
+
+    .home-rightcontainer img {
+        display: none;
+    }
+
+    .welcome-text h2{
+        font-size: 26px;
+        width: 100%;
+    }
+
+    .home-leftcontainer h3 {
+        width: 120%;
+    }
+
+    .navbtn {
+        padding: 10px;
+        width: 180%;
+    }
+
+    .navbtn a {
+        font-size: 14px;
+    }
+
+    .ContactPage_button {
+        margin-left: 1em;
+    }
+
+    .AboutPage_button {
+        margin-left: 2em;
+    }
+
+/** --------------------------------------------------------------------------------------**/
+    /*Review page*/
+    .Reviews-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-rdiv {
+        width: 100%;
+    }
+
+    .left-rdiv h3 {
+        font-size: 32px;
+    }
+
+    .left-rdiv .circle-icon {
+        height: auto;
+        width: 80px;
+    }
+
+    .right-rdiv {
+        height: 190vh;
+        width: 100%;
+    }
+
+    .reviewContainer {
+        width: auto;
+        height: 160vh;
+    }
+
+    .fd h2 {
+        margin-top: -15px;
+        font-size: 20px;
+    }
+
+    .fd-text p {
+        padding: 13px;
+    }
+
+/** --------------------------------------------------------------------------------------**/
+    /*About & Services page*/
+    .About-div h2,
+    .Service-page h2  {
+        font-size: 40px;
+        padding-top: 60px;
+    }
+
+    .Profile-Team, 
+    .language-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+        height: 1080px;
+    }
+
+    .CEO-container,
+    .Programmers-container,
+    .Designers-container,
+    .WebDev-container,
+    .Java-container,
+    .AndroidApp-container {
+        height: 300px;
+    }
+/** --------------------------------------------------------------------------------------**/
+    /*Details About page*/
+    .main-container h1 {
+        font-size: 30px;
+    }
+
+    .floatbox {
+        margin-top: -70%;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    #profile-mikel .profile-name {
+        font-size: 24px;
+    }
+
+    #profile-diez .profile-motto {
+        font-size: 18px;
+    }
+    
+    .card-list .card-item .name {
+        font-size: 20px;    
+    }
+
+/** --------------------------------------------------------------------------------------**/
+    /*Details Services page*/
+
+    .mainContainer {
+        height: 2250px;
+    }
+
+    .topContainer {
+        margin-top: 60px;
+        height: 300px;
+    }
+
+    .topContainer h5 {
+        margin-top: 40%;
+    }
+
+    .detailsContainer p {
+        font-size: 18px;
+    }
+
+    .detailsContainer ol {
+        padding-left: 50px;
+        padding-top: 5px;
+        font-size: 22px;
+    }
+
+    .detailsContainer ul {
+        font-size: 16px;
+    }
+
+    .bottomContainer ul {
+        padding-left: 50px;
+    }
+
+    .bottomContainer h2{
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    .footerContainer {
+        font-size: 14px;
+        height: 10%;
+    }
+
+    .footerContainer .cdt {
+        margin-left: -90%;
+        margin-top: 20%;
+        padding: 20px;
+    }
+
+    .top-footer .num,
+    .address, 
+    .bottom-footer .page,
+    .email  {
+        padding-top: 10px;
+    }
+
+    .foot_details {
+        width: 90%;
+        height: 100%;
+    }
+
+/** --------------------------------------------------------------------------------------**/
+    /*Contact page*/
+    .Contact-page {
+        height: 100vh;
+        position: relative;
+    }
+
+    .left-container,
+    .text-details {
+        display: none;
+    }
+
+    .contact-container,
+    .right-container {
+        width: 70vh;
+        height: 500px;
+        border-radius: 10px;
+    }
+
+    .right-container h3 {
+        padding: 20px;
+    }
+
+    .right-container .input-box {
+        margin-top: 40px;
+    }
+
+    .Confirm-message {
+        font-size: 12px;
+    }
+}
